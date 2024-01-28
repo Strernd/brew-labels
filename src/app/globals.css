@@ -16,6 +16,18 @@
   }
 }
 
+@media print {
+  body {
+    visibility: hidden;
+  }
+  #printarea {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
